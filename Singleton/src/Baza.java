@@ -10,8 +10,7 @@ interface IPolaczenie {
 public class Baza {
     private char[] tab = new char[100]; 
 
-    //wczesna inicjalizacja bazy
-    private Baza(){}
+    private Baza(){}                                //wczesna inicjalizacja bazy
     private static Baza baza=new Baza();
     private static Baza getBaza(){return baza;} 
      
@@ -25,8 +24,7 @@ public class Baza {
     private static class Polaczenie implements IPolaczenie {
 
         private Baza baza=Baza.getBaza();
-        //Utworzenie trzech polaczen 
-        private static Polaczenie[] polaczenia = {new Polaczenie(),new Polaczenie(),new Polaczenie()};
+        private static Polaczenie[] polaczenia = {new Polaczenie(),new Polaczenie(),new Polaczenie()};              //Utworzenie trzech polaczen, wczesna inicjalizacja
         private static int kolejnosc=0;
         private Polaczenie(){}
 
